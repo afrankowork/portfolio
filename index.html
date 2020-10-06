@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <!-- Everything For Nav Bar -->
+    <nav class="navbar transparent fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="AdamFrankowski_Resume1.docx">Resume</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="#">Projects<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="intro">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h3 class="display-4">Hello, I'm <a class='grayLetter'><b>Adam Frankowski</b></a> a developer currently studying at <a class = 'grayLetter'><b>Eleven Fifty Academy</b></a> based in Indianapolis, IN</h3>
+          <p class="lead"></p>
+          
+        </div>
+          <div id='arrowContainer'>
+        <p id="arrowText">Projets Below</p>
+        <a class='slideDown' href="#projectHeader"><i id='arrowDown' class="fas fa-chevron-circle-down fa-3x"></i></a>
+      </div>
+      </div>
+     </section>
+
+     <section class="projects">
+      <h1 id="projectHeader">Projects</h4>
+      <hr id= "hrProjects">
+
+       <div id="projectsContainer">
+        
+         <div id="projectOne">
+         <a href="https://afrankowork.github.io/statLayout/" target="blank">
+          <img class="projImg" src="./assets/elevenFiftyBadge.png" height="350px" width="350px"></a>
+          <p class="projectDescrip">Display of CSS fundamentals by recreating Eleven Fifty Academy Homepage</p>
+            <a class="gitAlign" href="https://github.com/afrankowork/statLayout" target="blank"><img src="./assets/GitHub-Mark-64px.png" alt=""></a>
+       
+         </div>
+         
+         <div id="projectTwo">
+          <a href="https://codepen.io/afrankowork/pen/wvGjGbW" target="blank">
+            <img class="projImg" src="./assets/toad.png" alt="Creation of Toad" width="350px" height="350px"></a>
+            <p class="projectDescrip">Creating Toad with basic CSS on Codepen <br> Techonolgies Used</p>
+           
+         </div>
+
+          <div id="projectThree">
+           <a href="https://afrankowork.github.io/PokemonApi/"
+           target="blank">
+            <img class="projImg" src="./assets/pokemonPreview.png" alt="" height="350px"width="350px"></a>
+            <p class="projectDescrip">An app that displays pokemon which are pulled from the pokemon Api</p>
+            <a class="gitAlign" href="https://github.com/afrankowork/PokemonApi" target="blank"><img src="./assets/GitHub-Mark-64px.png" alt=""></a>
+          </div>
+
+          <div id="projectFour">
+            <a href="https://afrankowork.github.io/movieApp/"><img class = "projImg" src="./assets/movieApp.png" alt="" height="350px" width="350px"></a>
+            <p class="projectDescrip">Displays movies that are grabbed from two API's. Can display sinlge titles, keyword searches, and upcoming movies</p>
+            <a class="gitAlign" href="https://github.com/afrankowork/movieApp" target="blank"><img src="./assets/GitHub-Mark-64px.png" alt=""></a>
+          </div>
+
+          <div id="projectFive">
+            <img class="projImg" src="./assets/crowdControl.png" alt="" height="350px" width="350px">
+            <p class="projectDescrip">A mobiel Android App to help limit or keep track of people in a gym or store.</p>
+            <a class="gitAlign" href="https://github.iu.edu/INFO-Capstone-2020/team-20" target="blank"><img src="./assets/GitHub-Mark-64px.png" alt=""></a>
+          </div>
+
+       </div>
+     </section>
+      
+     <section class="aboutMe">
+       <h2 id="aboutHeader">About Me</h2>
+       <hr id="hrAbout">
+       <div id="textContainer">
+        <p id="firstPara">After graduating from IU in May with a degree in Informatics I was trying to find my next step. Similar to many others my job was taken by covid, which turned into a blessing rather than a curse.</p>
+        <p id="secondPara">By losing my previous oppurtunity it allowed myself to continue pursuing my passion in technology rather than just an income. I enrolled into Eleven Fifty Academy to enhance my problem solving and build upon my organization and communication skills</p>
+        <p id="thirdPara">As a recent graduate of Eleven Fifty, I am excited to be able to combine my problem solving and people skills in a role in the tech industry. 
+         </p>
+         </div>
+     </section>
+
+     <section class="formSpree">
+
+      <h2 id="formHeader">Contact Me</h2>
+
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+        
+        <fieldset id="fs-frm-inputs">
+          <div id="formContainer">
+          <input type="text" name="name" id="full-name" placeholder="Name: " required="">
+          
+          <input type="Email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          
+          <textarea rows="5" name="message" id="message" placeholder="Message Details" required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          <input id="submitBtn" type="submit" value="Submit">
+          </div>
+        </fieldset>
+        
+        
+      </form>
+     </section>
+   
+     
+     <footer id="sticky-footer" class="">
+      <div class="containerFooter text-center">
+        <small> &copy; Adam Frankowski</small>
+        <br>
+        <a href="https://www.linkedin.com/in/adam-frankowski-80591a181"><i class="fab fa-linkedin fa-3x" ></i></a>
+        <a href="https://github.com/afrankowork"><i class="fab fa-github fa-3x" ></i></a>
+
+      </div>
+    </footer>
+      
+   
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/07c44c4ed8.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+

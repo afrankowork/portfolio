@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://127.0.0.1:5501/3-Javascript-API-Fundamentals/4-Apps/OMDb/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Hello, world!_files/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- css style -->
+    <link rel="stylesheet" href="./Hello, world!_files/style.css">
+    <script src="./Hello, world!_files/07c44c4ed8.js" crossorigin="anonymous"></script><link href="./Hello, world!_files/free-v4-shims.min.css" media="all" rel="stylesheet"><link href="./Hello, world!_files/free-v4-font-face.min.css" media="all" rel="stylesheet"><link href="./Hello, world!_files/free.min.css" media="all" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="http://127.0.0.1:5501/3-Javascript-API-Fundamentals/4-Apps/OMDb/index.html#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a id="singleSearch" class="nav-link" href="http://127.0.0.1:5501/3-Javascript-API-Fundamentals/4-Apps/OMDb/index.html#">Single Search<span class="sr-only">(current)</span></a>
+          <a id="keywordSearch" class="nav-link" href="http://127.0.0.1:5501/3-Javascript-API-Fundamentals/4-Apps/OMDb/index.html#">Keyword Search</a>
+          <a id="Recommendations" class="nav-link" href="http://127.0.0.1:5501/3-Javascript-API-Fundamentals/4-Apps/OMDb/index.html#">Recommendations</a>
+          <a id="Upcoming" class="nav-link" href="http://127.0.0.1:5501/3-Javascript-API-Fundamentals/4-Apps/OMDb/index.html#">Upcoming</a>
+
+        </div>
+      </div>
+    </nav>
+    <h2 id="header2">Enter Your Favorite Movie</h2>
+    
+
+    <section id="searchBox">
+    
+        <input type="text" id="searchText" class="searchText" placeholder="Enter a Movie to Search">
+        <a id="searchBtn" href="http://127.0.0.1:5501/3-Javascript-API-Fundamentals/4-Apps/OMDb/index.html#">
+            <i class="fas fa-search" aria-hidden="true"></i>
+        </a>
+       
+    </section>
+
+    <section id="movieInfo">
+      
+    </section>
+   
+
+    <!-- Optional JavaScript -->
+    <script src="./Hello, world!_files/scriptOMDb.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./Hello, world!_files/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./Hello, world!_files/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="./Hello, world!_files/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

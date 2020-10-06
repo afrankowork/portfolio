@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #517687; 
+}
+
+nav {
+    opacity: .8;
+    font-weight: bolder;
+}
+
+#singleSearch {
+    padding-left: 400px;
+    color: 194256;
+}
+#nav-link {
+    color: 194256;
+}
+
+#searchBox{
+   
+    position: relative;
+    left: 20%;
+    top: 110px;
+    padding: 30px;
+    background-color: #194256;
+    border: solid 1px #194256;
+    border-radius: 10px;
+    margin-right: 650px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+
+
+#searchText {
+    background-color: #517687;
+    color: whitesmoke;
+    width: 660px;
+    
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color: whitesmoke;
+ }
+
+ h2 {
+     text-align: center;
+     position: relative;
+     top: 75px;
+     border: solid 1px #194256;
+     background-color: #194256;
+     color: white;
+     margin-left: 450px;
+     margin-right: 450px;
+     border-radius: 10px;
+     padding: 10px;
+     
+ }
+
+ #movieInfo {
+    background-color: #194256;
+    border: solid 1px #194256;
+     position: relative;
+     top: 200px;
+     padding-left: 200px;
+     padding-top: 75px;
+     
+ 
+  
+
+ }
+ #movieDetail {
+     position: relative;
+     bottom: 400px;
+     left: 350px;
+     color: whitesmoke;
+     border: 1px solid white;
+     margin-right: 500px;
+     padding: 30px;
+ }
+
+ #movieContainer {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding-left: 10px;
+     
+ }
+
+ #movieContainer .card {
+     padding: 20px;
+     margin: 10px;
+ }

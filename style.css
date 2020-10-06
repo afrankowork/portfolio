@@ -1,0 +1,407 @@
+html, body {
+scroll-behavior: smooth;
+width: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden; 
+}
+
+nav {
+    opacity: .8;
+    
+}
+
+
+.jumbotron  {
+    position: relative;
+    background-color:rgb(30,52,52);
+    background-image: url('./assets/niceMountain.jpg');
+    background-size: cover;
+    height: 105vh;
+    color: lightgray;
+    text-align: center;
+    margin-bottom: 0;
+    
+    }
+
+.jumbotron h3 {
+    
+    letter-spacing: 1.5%;
+    font-size: 300%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 15%;    
+
+}
+
+.grayLetter {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.grayLetter:link {
+    color: lightgray;
+    text-decoration: none;
+    
+}
+
+.grayLetter:visited {
+    color: lightgray;
+    text-decoration: none;
+    
+}
+
+.grayLetter:active {
+    color: lightgray;
+    text-decoration: none;
+    
+}
+
+.grayLetter:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+}
+
+#arrowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#arrowText {
+    position: absolute;
+    bottom: 20%;
+    left: 46%;
+    font-size: 150%;
+}
+ 
+#arrowDown {
+    
+    position: absolute;
+    bottom: 10%;
+    left: 49%;
+    animation: bounceArrow 2s infinite;
+}
+
+
+@-webkit-keyframes bounceArrow {
+    0%{bottom: 10%;}
+    50%{bottom: 15%;}
+    100%{bottom: 10%;}
+}
+.slideDown {
+    transition: all 500ms linear;
+}
+
+.intro  {
+    background-color: rgb(30,52,52);
+}
+
+.projects {
+    background-color: rgb(25, 66, 86);
+}
+
+#projectHeader {
+    padding-top: 3%;
+    background-color: rgb(25, 66, 86);
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    font-size: 500%;
+    
+}
+
+#hrProjects {
+   background-color: #65A8D1;
+   width: 25%;
+   height: 4px;
+    
+
+    
+}
+
+
+#projectsContainer {
+    padding: 3%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: rgb(25, 66, 86);
+   
+}
+
+
+
+#projectOne {
+    position: relative;
+    margin: 2%;
+    transition: all 500ms linear;
+}
+
+
+
+
+.projectDescrip {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    
+    opacity: 0;
+    z-index: 1;
+}
+
+.gitAlign{
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+#projectOne:hover {
+    background-color: #65A8D1;
+    color: white;
+}
+
+#projectOne:hover .projImg{
+    opacity: .1;
+    
+}
+
+#projectOne:hover  .projectDescrip{
+   opacity: 1;
+   font-size: bolder;
+   
+}
+
+#projectOne:hover  .gitAlign {
+    opacity: 1;
+    transition: .8;
+    
+}
+
+#projectTwo {
+    position: relative;
+    margin: 2%;
+    transition: all 500ms linear;
+    padding-left: 3%;
+}
+
+
+#projectTwo:hover {
+    background-color: #65A8D1;
+    color: white;
+    
+}
+
+#projectTwo:hover .projImg{
+    opacity: .1;
+}
+
+#projectTwo:hover  .projectDescrip{
+   opacity: 1;
+   font-size: bolder;
+}
+
+#projectThree {
+    position: relative;
+    margin: 2%;
+    transition: all 500ms linear;
+}
+
+#projectThree:hover {
+    background-color: #65A8D1;
+    color: white;
+}
+
+#projectThree:hover .projImg{
+    opacity: .1;
+}
+
+#projectThree:hover  .projectDescrip{
+   opacity: 1;
+   font-size: bolder;
+}
+
+#projectThree:hover  .gitAlign {
+    opacity: 1;
+    
+}
+
+#projectFour {
+    position: relative;
+    margin: 2%;
+    transition: all 500ms linear;
+}
+
+#projectFour:hover {
+    background-color: #65A8D1;
+    color: white;
+}
+
+#projectFour:hover .projImg{
+    opacity: .1;
+}
+
+#projectFour:hover  .projectDescrip{
+   opacity: 1;
+   font-size: bolder;
+}
+
+#projectFour:hover  .gitAlign {
+    opacity: 1;
+    
+}
+
+#projectFive {
+    position: relative;
+    margin: 2%;
+    transition: all 500ms linear;
+}
+
+#projectFive:hover {
+    background-color: #65A8D1;
+    color: white;
+}
+
+#projectFive:hover .projImg{
+    opacity: .1;
+}
+
+#projectFive:hover  .projectDescrip{
+   opacity: 1;
+   font-size: bolder;
+}
+
+#projectFive:hover  .gitAlign {
+    opacity: 1;
+    
+}
+
+.aboutMe {
+    background-color: #65A8D1;
+    padding-bottom: 8%;
+}
+
+#aboutHeader {
+    text-align: center;
+    color: white;
+    font-size: 500%;
+    padding-top: 3%;
+ 
+    margin-bottom: 0;
+}
+
+#hrAbout {
+    background-color: rgb(25, 66, 86);
+    width: 25%;
+    height: 4px;
+    margin-bottom: 4%;
+}
+
+#textContainer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    word-wrap: normal;
+    font-size: 150%;
+    
+}
+
+#firstPara {
+   padding-left: 7.5%;
+   
+}
+
+#secondPara {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+#thirdPara {
+    padding-right: 7.5%;
+}
+
+.formSpree {
+    background-color: rgb(25, 66, 86);
+    color: white;
+}
+
+#formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#formHeader {
+    font-size: 500%;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#full-name {
+    color: white;
+    background-color: rgb(25, 66, 86);
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    
+    border-top: 1px solid rgb(25, 66, 86);
+    border-left: 1px solid rgb(25, 66, 86);
+    border-right: 1px solid rgb(25, 66, 86);
+    
+    
+    
+}
+
+#email-address {
+    color: white;
+    background-color: rgb(25, 66, 86);
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    
+    border-top: 1px solid rgb(25, 66, 86);
+    border-left: 1px solid rgb(25, 66, 86);
+    border-right: 1px solid rgb(25, 66, 86);
+}
+
+#message {
+    color: white;
+    background-color: rgb(25, 66, 86);
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    
+    border-top: 1px solid rgb(25, 66, 86);
+    border-left: 1px solid rgb(25, 66, 86);
+    border-right: 1px solid rgb(25, 66, 86);
+}
+
+#submitBtn {
+    background-color: #65A8D1;
+    border: 1px solid #65A8D1;
+    border-radius: 10px;
+    padding: .5%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+}
+
+.containerFooter {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
