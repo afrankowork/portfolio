@@ -8,7 +8,13 @@ overflow-x: hidden;
 
 nav {
     opacity: .8;
+    background-color: darkgray;
     
+}
+
+.nav-link {
+    margin-left: 15px;
+    font-size: 125%;
 }
 
 
@@ -94,7 +100,7 @@ nav {
     transition: all 500ms linear;
 }
 
-.intro  {
+#intro  {
     background-color: rgb(30,52,52);
 }
 
@@ -129,8 +135,8 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: rgb(25, 66, 86);
    
 }
@@ -167,6 +173,8 @@ nav {
 #projectOne:hover {
     background-color: #65A8D1;
     color: white;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 #projectOne:hover .projImg{
@@ -190,13 +198,14 @@ nav {
     position: relative;
     margin: 2%;
     transition: all 500ms linear;
-    padding-left: 3%;
+    
 }
 
 
 #projectTwo:hover {
     background-color: #65A8D1;
     color: white;
+    
     
 }
 
@@ -345,7 +354,13 @@ nav {
     font-size: 500%;
     padding-top: 5%;
     text-align: center;
-    padding-bottom: 2%;
+    
+}
+#contactHr {
+    background-color: #65A8D1;
+    width: 25%;
+    height: 4px;
+    margin-bottom: 3%;
 }
 
 #full-name {
@@ -402,6 +417,72 @@ nav {
 }
 
 .containerFooter {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 9%;
+    padding-bottom: 9%;
+    background-color: #65A8D1;
+    color: white;
+    
 }
+
+#smallPrint {
+    font-size: 150%;
+}
+
+#linkedin {
+    color: lightgray;
+    text-decoration: none;
+}
+
+#linkedin:link {
+    color: lightgray;
+    text-decoration: none;
+    
+}
+
+#linkedin:visited {
+    color: lightgray;
+    text-decoration: none;
+    
+}
+
+#linkedin:active {
+    color: lightgray;
+    text-decoration: none;
+    
+}
+
+#linkedin:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+}
+
+#githubLogo {
+    color: lightgray;
+    text-decoration: none;
+}
+
+#githubLogo:link {
+    color: lightgray;
+    text-decoration: none;
+    
+}
+
+#githubLogo:visited {
+    color: lightgray;
+    text-decoration: none;
+    
+}
+
+#githubLogo:active {
+    color: lightgray;
+    text-decoration: none;
+    
+}
+
+#githubLogo:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+}
+

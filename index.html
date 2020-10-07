@@ -10,26 +10,28 @@
     <link rel="stylesheet" href="style.css">
     
 
-    <title>Hello, world!</title>
+    <title>Portfolio</title>
   </head>
   <body>
       <!-- Everything For Nav Bar -->
     <nav class="navbar transparent fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="AdamFrankowski_Resume1.docx">Resume</a>
+        <a class="navbar-brand" href="AdamFrankowski_Resume1.docx">Resume <i class="fas fa-arrow-down"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-link active" href="#">Projects<span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">About Me</a>
-            <a class="nav-link" href="#">Experience</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#intro">Home</a>
+            <a class="nav-link" href="#projectHeader">Projects</a>
+             
+            <a class="nav-link" href="#aboutHeader">About Me</a>
+            
+            <a class="nav-link" href="#formHeader">Contact</a>
           </div>
         </div>
       </nav>
 
-      <section class="intro">
+      <section id="intro">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h3 class="display-4">Hello, I'm <a class='grayLetter'><b>Adam Frankowski</b></a> a developer currently studying at <a class = 'grayLetter'><b>Eleven Fifty Academy</b></a> based in Indianapolis, IN</h3>
@@ -73,7 +75,7 @@
           </div>
 
           <div id="projectFour">
-            <a href="https://afrankowork.github.io/movieApp/"><img class = "projImg" src="./assets/movieApp.png" alt="" height="350px" width="350px"></a>
+            <a href="https://afrankowork.github.io/movieApp/" target="blank"><img class = "projImg" src="./assets/movieApp.png" alt="" height="350px" width="350px"></a>
             <p class="projectDescrip">Displays movies that are grabbed from two API's. Can display sinlge titles, keyword searches, and upcoming movies</p>
             <a class="gitAlign" href="https://github.com/afrankowork/movieApp" target="blank"><img src="./assets/GitHub-Mark-64px.png" alt=""></a>
           </div>
@@ -101,8 +103,9 @@
      <section class="formSpree">
 
       <h2 id="formHeader">Contact Me</h2>
+      <hr id='contactHr'>
 
-      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/afrankowork@gmail.com" method="post">
         
         <fieldset id="fs-frm-inputs">
           <div id="formContainer">
@@ -123,10 +126,10 @@
      
      <footer id="sticky-footer" class="">
       <div class="containerFooter text-center">
-        <small> &copy; Adam Frankowski</small>
+        <small id='smallPrint'> &copy; Adam Frankowski</small>
         <br>
-        <a href="https://www.linkedin.com/in/adam-frankowski-80591a181"><i class="fab fa-linkedin fa-3x" ></i></a>
-        <a href="https://github.com/afrankowork"><i class="fab fa-github fa-3x" ></i></a>
+        <a id='linkedin' href="https://www.linkedin.com/in/adam-frankowski-80591a181"><i class="fab fa-linkedin fa-3x" ></i></a>
+        <a id = 'githubLogo' href="https://github.com/afrankowork"><i class="fab fa-github fa-3x" ></i></a>
 
       </div>
     </footer>
