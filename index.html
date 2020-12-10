@@ -14,15 +14,15 @@
   </head>
   <body>
       <!-- Everything For Nav Bar -->
-    <nav class="navbar transparent fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="AdamFrankowski_Resume1_4.pdf" target="blank">Resume <i class="fas fa-arrow-down"></i></a>
+    <nav class="navbar transparent navbar-expand-lg">
+      <a class="navbar-brand" href="./assets/Resume.pdf" target="blank"><button id='resumeBtn' class="btn btn-outline-secondary">Resume</button></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-link" href="#intro">Home</a>
-            <a class="nav-link" href="#projectHeader">Projects</a>
+            <a class="nav-link" href="#projectsHeader">Projects</a>
              
             <a class="nav-link" href="#aboutHeader">About Me</a>
             
@@ -31,89 +31,141 @@
         </div>
       </nav>
 
+    
+      
+
       <section id="intro">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h3 class="display-4">Hello, I'm <a class='grayLetter'><b>Adam Frankowski</b></a> a developer currently studying at <a class = 'grayLetter'><b>Eleven Fifty Academy</b></a> based in Indianapolis, IN</h3>
-          <p class="lead"></p>
-          
+         <p id='helloHeader'>Hello, I am</p>
+         <p id='nameHeader'>Adam Frankowski</p>
+         <p id='buildHeader'>I'm a full-stack web developer.</p>
+         <p id='bioHeader'>I am based in Indianapolis, IN specializing in building and desiging exceptional websites, applications, and everything in between.</p>
+         <p id='seeProjHeader'>See Some of My Projects Below</p>
+         <div id ='downArrowDiv' ><i id= 'arrowIcon' class="fa fa-arrow-down fa-3x" aria-hidden="true"></i></div>
         </div>
-          <div id='arrowContainer'>
-        <p id="arrowText">Projects Below</p>
-        <a class='slideDown' href="#projectHeader"><i id='arrowDown' class="fas fa-chevron-circle-down fa-3x"></i></a>
-      </div>
-      </div>
+      </div>  
      </section>
+
+     <section id='iconSidebar'>
+       <div id='mailSidebar'><a class='iconColor' href="mailto:afrankowork@gmail.com"><i class="far fa-envelope fa-2x"></i><a class='iconColor' href="mailto:afrankowork@gmail.com"></a></div>
+      <div id='linkedinSidebar'><a class='iconColor' target="blank" href="https://www.linkedin.com/in/adam-frankowski-80591a181/"><i class="fab fa-linkedin fa-2x" ></i></a></div>
+      <div id='gitHubSidebar'><a class='iconColor' target="blank" href="https://github.com/afrankowork"><i class="fab fa-github fa-2x" ></i></a></div>
+      
+      <div id='hrSidebar'> </div>
+    </section>
+
+
+    <div id='projHeadCont'> 
+      <div id='projectsHeader'>Projects</div>
+      <hr id='headerHr'>
+    </div>
 
      <section class="projects">
-      <h1 id="projectHeader">Projects</h4>
-      <hr id= "hrProjects">
-
-       <div id="projectsContainer">
         
-         <div id="projectOne">
-         <a href="https://afrankowork.github.io/statLayout/" target="blank">
-          <img class="projImg" src="./assets/elevenFiftyBadge.png" height="350px" width="350px"></a>
-          <p class="projectDescrip">Display of CSS fundamentals by recreating Eleven Fifty Academy Homepage <br> <br> Languages:<br>
-          -HTML/CSS </p>
-            <a class="gitAlign" href="https://github.com/afrankowork/statLayout" target="blank"><img src="./assets/GitHub-Mark-64px.png" alt=""></a>
-       
-         </div>
-         
-         <div id="projectTwo">
-          <a href="https://codepen.io/afrankowork/pen/wvGjGbW" target="blank">
-            <img class="projImg" src="./assets/toad.png" alt="Creation of Toad" width="350px" height="350px"></a>
-            <p class="projectDescrip1">Created Toad with CSS on Codepen <br><br> Languages: <br> -HTML/CSS </p>
-           
-         </div>
+        <div id="pokeProject">
+          
+          <img src="./assets/pokemonPreview.png" height='300px' width='300px' alt="">
+          <div id='formatPokeText'>
+          <h5 >Pokemon Api</h5>
+          <span id='pokeDescrip'>Using Javascript, data is fetched from the pokeAPI then displayed with bootstrap cards</span>
+          <br>
+          <br>
+          <p>Languages/Technologies</p>
+          <p>HTML/CSS, Javascript, PokeApi</p>
+          <a target='blank' href="https://github.com/afrankowork/PokemonApi" class="btn btn-primary projectsGithub"><i  class="fab fa-github fa-2x" ></i></a>
+          <a href="https://afrankowork.github.io/PokemonApi/" target="blank"><button class="btn btn-outline-secondary projectsBtn">Check It Out!</button>
+          </div></a>
+        </div>
 
-          <div id="projectThree">
-           <a href="https://afrankowork.github.io/PokemonApi/"
-           target="blank">
-            <img class="projImg" src="./assets/pokemonPreview.png" alt="" height="350px"width="350px"></a>
-            <p class="projectDescrip">An app that displays information about each and every pokemon. Fetches data from the pokeAPI. <br><br> Languages: <br> -HTML/CSS <br> -Javascript </p>
-            <a class="gitAlign" href="https://github.com/afrankowork/PokemonApi" target="blank"><img src="./assets/GitHub-Mark-64px.png" alt=""></a>
+        <div id='movieProject'>
+          <img id='movieImg' src="https://cdn0.iconfinder.com/data/icons/apgh-cinema-and-fastfood/64/Camera__cinema__cinematography__film__media__movie_-512.png" height='250px' width='250px' alt="">
+          <div id='movieText'>
+          <h5 >Movie Search Api</h5>
+          <span id='pokeDescrip'>A user may search for movies by title, get recommendations, and see upcoming/what's in theatres</span>
+          <br>
+          <br>
+          <p>Languages/Technologies</p>
+          <p>HTML/CSS, Javascript, Omdb, MovieDb</p>
+          <a target='blank' href="https://github.com/afrankowork/movieAPI" class="btn btn-primary projectsGithub"><i  class="fab fa-github fa-2x" ></i></a>
+          <a target='blank' href="https://af-movieapi.web.app/"><button class="btn btn-outline-secondary projectsBtn" >Check It Out!</button></a>
           </div>
-
-          <div id="projectFour">
-            <a href=" https://af-movieapi.web.app" target="blank"><img class = "projImg" src="https://cdn0.iconfinder.com/data/icons/apgh-cinema-and-fastfood/64/Camera__cinema__cinematography__film__media__movie_-512.png" alt="" height="350px" width="350px"></a>
-            <p class="projectDescrip">Allows a user to display information about a specific movie title, see whats coming into theatres, and find recommendations based on a title. <br> <br> Languages: <br> -HTML/CSS <br> -Javascript </p>
-            <a class="gitAlign" href="https://github.com/afrankowork/movieApp" target="blank"><img src="./assets/GitHub-Mark-64px.png" alt=""></a>
+        </div>
+      
+        <div id='crowdProj'>
+          <img src="./assets/crowdControl.png" height='250px' width='250px' alt="">
+          <div id='crowdText'>
+            <h5>Crowd Control App</h5>
+            <span>
+              A user is able to check in to a location, such as a gym, using our app by scanning a barcode upon entering and leaving to help a business keep a livecount of whose in their store/location
+            </span>
+            <br>
+            <br>
+            <p>Languages/Technologies</p>
+            <p>Java, MySql, Php, Android</p>
+            <a target='blank' href="https://github.com/afrankowork/CrowdControl" class="btn btn-primary projectsGithub"><i  class="fab fa-github fa-2x" ></i></a>
           </div>
+      </div>
 
-          <div id="projectFive">
-            <img class="projImg" src="./assets/crowdControl.png" alt="" height="350px" width="350px">
-            <p class="projectDescrip">An Android app to help limit occupancy in a location. <br><br> Languages <br>-Java <br> -PHP/MySQL </p>
-            <a class="gitAlign" href="https://github.iu.edu/INFO-Capstone-2020/team-20" target="blank"><img src="./assets/GitHub-Mark-64px.png" alt=""></a>
-          </div>
+      <div id='topSpotProj'>
+        <img src="./assets/logo.png" height='275px' width='275px' alt="">
+        <div>
+          <h5>Top Spots</h5>
+          <span>
+            Allows users to search for the top restaurants in their city, or by name. Can view comments and star ratings left by users as well as live chat functionality.
+          </span>
+          <br>
+          <br>
+          <p>Languages/Technologies</p>
+          <p>React, Express.js, Postgres, Node, FireStore</p>
+          <a target='blank' href="https://github.com/afrankowork/TopSpotClient" class="btn btn-primary projectsGithub"><i  class="fab fa-github fa-2x" ></i></a>
+          <a target='blank' href="https://af-topspots-client.herokuapp.com/"><button class="btn btn-outline-secondary projectsBtn" >Check It Out!</button></a>
+        </div>
+      </div>
 
-          <div id="projectSix">
-            <img class = "projImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSt9p0YOk292zhd2aFlkHPTF6viAGuoP-paCA&usqp=CAU" alt="" height="350px" width="350px">
-            <p class="projectDescrip"></p>
+          
 
-          </div>
-
-          <div id="project6">
-            <img src="https://cdn.shopify.com/s/files/1/0877/9468/products/SBUK115-1b_810f1545-b1fc-437c-a81a-1b78943e2c98_1024x1024.png?v=1527506903" alt="" height="350px" width="350px">
-          </div>
-
-       </div>
+      
      </section>
       
+     <div id='aboutHeaderContainer'>
+      <div id="aboutHeader">About Me</div>
+      <hr id="hrAbout">
+     </div>
+
      <section class="aboutMe">
-       <h2 id="aboutHeader">About Me</h2>
-       <hr id="hrAbout">
+       
        <div id="textContainer">
-        <p id="firstPara">After graduating from IU in May with a degree in Informatics I was trying to find my next step. Similar to many others, my job was taken by COVID-19, which turned into a blessing rather than a curse.</p>
-        <p id="secondPara">I was excited to be able to continue pursuing my passion in technology rather than just an income in sales. I enrolled into Eleven Fifty Academy to enhance my problem solving and build upon my organization and communication skills</p>
-        <p id="thirdPara">As a future graduate of Eleven Fifty, I am looking forward to combining my problem solving and people skills in a role in the tech industry. 
+        <p><i class="fas fa-chevron-right"></i></i>
+            Hi, I am <strong>Adam Frankowski</strong> a Web Developer located in Indianapolis, IN.
+          </p>
+          <p><i class="fas fa-chevron-right"></i>
+            My goal is to always provide creative and user engaging websites/apps.
          </p>
+         <p> <i class="fas fa-chevron-right"></i>After graduating from <strong>Indiana University</strong> in May amidst Corona, I decided to pursue my passion with coding and enroll into <strong>Eleven Fifty Academy Coding Bootcamp.</strong> While there I was pushed to build meaningful projects with new technologies.  </p>
+         <p><i class="fas fa-chevron-right"></i>
+           Here are some of the technologies/languages I've learned and have been using on a daily basis
+         </p>
+         <div id='listBulletContainer'>
+         <ul>
+           <li>HTML <i class="fab fa-html5"></i></li>
+           <li>CSS <i class="fab fa-css3"></i></li>
+           <li>JS <i class="fab fa-js"></i></li>
+         </ul>
+         <ul >
+           <li>React <i class="fab fa-react"></i></li>
+           <li>Node.js <i class="fab fa-node"></i></li>
+           
+         </ul>
+        </div>
+
          </div>
+       </div>
      </section>
 
      <section class="formSpree">
 
-      <h2 id="formHeader">Contact Me</h2>
+      <div id="formHeader">Contact Me</div>
       <hr id='contactHr'>
 
       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/afrankowork@gmail.com" method="post">
@@ -134,23 +186,6 @@
       </form>
      </section>
    
-     
-     <footer id="sticky-footer" class="">
-      <div class="containerFooter text-center">
-        <small id='smallPrint'> &copy; Adam Frankowski</small>
-        <br>
-        <a id='linkedin' href="https://www.linkedin.com/in/adam-frankowski-80591a181" target="blank"><i class="fab fa-linkedin fa-3x" ></i></a>
-        <a id = 'githubLogo' href="https://github.com/afrankowork" target="blank"><i class="fab fa-github fa-3x" ></i></a>
-
-      </div>
-    </footer>
-      
-   
-
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/07c44c4ed8.js"></script>
