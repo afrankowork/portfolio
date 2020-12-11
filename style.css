@@ -15,6 +15,9 @@ nav {
   padding-top: 1.5%;
 }
 
+.navbar-toggler {
+}
+
 .nav-link {
   margin-left: 15px;
   font-size: 125%;
@@ -141,6 +144,10 @@ nav {
 
 #gitHubSidebar {
   margin-bottom: 20px;
+}
+
+i {
+  font-size: 2em;
 }
 
 #hrSidebar {
@@ -481,4 +488,66 @@ p strong {
   text-decoration: none;
   color: white;
   font-size: 110%;
+}
+
+/*? Media Queries for Intro Page */
+
+/*? Queries for tabletsish */
+@media only screen and (max-width: 769px) {
+  #helloHeader {
+    font-size: 1.5em;
+  }
+
+  #nameHeader {
+    font-size: 3em;
+  }
+
+  #buildHeader {
+    font-size: 3em;
+  }
+
+  #bioHeader {
+    font-size: 1.25em;
+  }
+}
+
+/*? Bigger Phones */
+@media only screen and (max-width: 505px) {
+  #helloHeader {
+    font-size: 1.25em;
+  }
+
+  #nameHeader {
+    font-size: 2.75em;
+  }
+
+  #buildHeader {
+    font-size: 2.75em;
+  }
+
+  #bioHeader {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #helloHeader {
+    font-size: 1em;
+  }
+
+  #nameHeader {
+    font-size: 2em;
+  }
+
+  #buildHeader {
+    font-size: 2em;
+  }
+
+  #bioHeader {
+    font-size: 0.75em;
+  }
+
+  i {
+    font-size: 1.33em;
+  }
 }
