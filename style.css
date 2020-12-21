@@ -490,6 +490,12 @@ p strong {
   font-size: 110%;
 }
 
+/*? Chevron Size */
+
+.fa-chevron-right {
+  font-size: 0.875em;
+}
+
 /*? Media Queries for Intro Page */
 
 /*? Queries for tabletsish */
