@@ -582,4 +582,60 @@ p strong {
   .projectsGithub {
     font-size: 0.75em;
   }
+
+  /* ? Movie Project Section */
+  #projectsHeader {
+    font-size: 2em;
+  }
+
+  #movieProject {
+    font-size: 0.75em;
+    height: 550px;
+    width: 200px;
+  }
+
+  #movieImg {
+    height: 175px;
+    width: 175px;
+    padding: 10px;
+  }
+
+  /* ? Crowd Project */
+  #crowdProj {
+    font-size: 0.75em;
+    height: 550px;
+    width: 200px;
+  }
+
+  #crowdImg {
+    height: 130px;
+    width: 130px;
+  }
+
+  /* ? Top Spots */
+  #topSpotProj {
+    font-size: 0.75em;
+    height: 550px;
+    width: 200px;
+  }
+
+  #topSpotImg {
+    height: 175px;
+    width: 175px;
+    padding: 10px;
+  }
+
+  /* ? About Me */
+  #aboutHeader {
+    font-size: 1.5em;
+  }
+
+  .aboutMe {
+    font-size: 0.5em;
+  }
+
+  /* Contact Me */
+  #formHeader {
+    font-size: 1.5em;
+  }
 }
