@@ -554,10 +554,11 @@ p strong {
 
   #bioHeader {
     font-size: 0.75em;
+    padding-right: 3%;
   }
 
   i {
-    font-size: 1.25em;
+    font-size: 2em;
   }
 
   #hrSidebar {
