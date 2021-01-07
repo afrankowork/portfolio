@@ -15,9 +15,6 @@ nav {
   padding-top: 1.5%;
 }
 
-.navbar-toggler {
-}
-
 .nav-link {
   margin-left: 15px;
   font-size: 125%;
@@ -515,6 +512,9 @@ p strong {
   #bioHeader {
     font-size: 1.25em;
   }
+  #iconSidebar {
+    font-size: 1em;
+  }
 }
 
 /*? Bigger Phones */
@@ -533,6 +533,9 @@ p strong {
 
   #bioHeader {
     font-size: 1em;
+  }
+  #iconSidebar {
+    font-size: 0.5em;
   }
 }
 
