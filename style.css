@@ -650,6 +650,17 @@ p strong {
     padding: 10px;
   }
 
+  #portProj {
+    font-size: 0.75em;
+    height: 550px;
+    width: 200px;
+  }
+  #portImg {
+    height: 175px;
+    width: 175px;
+    padding: 10px;
+  }
+
   /* ? About Me */
   #aboutHeader {
     font-size: 1.5em;
