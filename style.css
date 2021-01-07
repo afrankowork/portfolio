@@ -559,4 +559,23 @@ p strong {
   i {
     font-size: 1.33em;
   }
+
+  /* ? For Projects Section */
+  #pokeProject {
+    font-size: 0.75em;
+    height: 550px;
+    width: 200px;
+  }
+
+  #pokeImg {
+    height: 175px;
+    width: 175px;
+    padding: 10px;
+  }
+  .projectsBtn {
+    font-size: 0.75em;
+  }
+  .projectsGithub {
+    font-size: 0.75em;
+  }
 }
