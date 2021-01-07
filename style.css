@@ -557,7 +557,11 @@ p strong {
   }
 
   i {
-    font-size: 1.33em;
+    font-size: 2em;
+  }
+
+  #hrSidebar {
+    height: 50px;
   }
 
   /* ? For Projects Section */
