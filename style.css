@@ -519,6 +519,37 @@ p strong {
 
 /*? Media Queries for Intro Page */
 
+@media only screen and (max-width: 1300px) {
+  #helloHeader {
+    font-size: 1.5em;
+  }
+  #nameHeader {
+    font-size: 3em;
+  }
+
+  #buildHeader {
+    font-size: 3em;
+  }
+
+  #bioHeader {
+    font-size: 1.25em;
+  }
+  #seeProjHeader {
+    font-size: 1em;
+  }
+  #downArrowDiv {
+    font-size: .75em;
+  }
+  #iconSidebar {
+    font-size: 1em;
+  }
+  #intro {
+    padding-bottom: 150px;
+    background-color: #0c241a;
+  }
+}
+
+
 /*? Queries for tabletsish */
 @media only screen and (max-width: 769px) {
   #helloHeader {
